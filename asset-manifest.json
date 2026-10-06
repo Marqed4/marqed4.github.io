@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.71f980bf.css",
-    "main.js": "/static/js/main.fa50b9a8.js",
+    "main.css": "/static/css/main.31a712b3.css",
+    "main.js": "/static/js/main.3c7f0d55.js",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Site.gif": "/static/media/Site.c78ea60fb3d2036cf57f.gif",
     "static/media/Music Off.gif": "/static/media/Music Off.29181053b175715be2a0.gif",
@@ -98,11 +98,11 @@
     "static/media/Event View.png": "/static/media/Event View.3cb7ff4cbc2588f35179.png",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "index.html": "/index.html",
-    "main.71f980bf.css.map": "/static/css/main.71f980bf.css.map",
-    "main.fa50b9a8.js.map": "/static/js/main.fa50b9a8.js.map"
+    "main.31a712b3.css.map": "/static/css/main.31a712b3.css.map",
+    "main.3c7f0d55.js.map": "/static/js/main.3c7f0d55.js.map"
   },
   "entrypoints": [
-    "static/css/main.71f980bf.css",
-    "static/js/main.fa50b9a8.js"
+    "static/css/main.31a712b3.css",
+    "static/js/main.3c7f0d55.js"
   ]
 }
