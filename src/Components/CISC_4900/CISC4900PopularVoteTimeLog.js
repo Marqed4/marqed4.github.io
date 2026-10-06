@@ -23,7 +23,8 @@ const entries = [
     date: "2026-10-02",
     duration: 5.5,
     category: "Documentation",
-    description: "Populated and organized the project's GitHub kanban board using the GitHub CLI: added 85 cards from the requirements reference (Done, In progress, Backlog), then audited the codebase for half-built features and added 10 Ready cards (E2E frontend crypto, encrypted-column migration, host check on the cluster route, rate-limit gaps, upvote enforcement, FD1 release phase, deploy docs, backend tests). Set Priority (P0-P2) and Size (XS-XL) on all ~95 cards and wrote a legend into the board's README.",
+    description: "Populated and organized the project's GitHub kanban board using the GitHub CLI: added 85 cards from the requirements reference (Done, In progress, Backlog), then audited the codebase for half-built features and added 10 Ready cards (E2E frontend crypto, encrypted-column migration, host check on the cluster route, rate-limit gaps, upvote enforcement," + 
+    "FD1 release phase, deploy docs, backend tests). Set Priority (P0-P2) and Size (XS-XL) on all ~95 cards and wrote a legend into the board's README.",
     challenges: "Draft cards can't hold GitHub labels, so Priority/Size fields were used instead. The audit found the repo has no tests, the cluster route has no host check, and render.yaml points at the wrong frontend folder. Next: build frontend crypto.js and close the P0 security cards.",
     reflection: "Auditing the code against the requirements doc showed several features marked done (rate limiting, upvotes, FD1) are only partly implemented, so the board is more honest now than the doc. Priority and Size values are my own estimates and need revisiting as work lands.",
   },

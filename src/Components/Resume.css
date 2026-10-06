@@ -183,3 +183,36 @@
     flex-direction: column;
   }
 }
+
+.resume-download {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 24px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 6px 16px;
+  text-decoration: none;
+}
+
+.resume-download:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.resume-pdf-viewer {
+  display: block;
+  width: 1200px;
+  max-width: 95%;
+  height: 130vh;
+  min-height: 1000px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}

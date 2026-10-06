@@ -69,6 +69,8 @@ const Details = () => {
               </h2>
               <p className="education-body">
                 Brooklyn College<br/>
+                • M.S. in Computer Science, Concentration: Information Systems<br/><br/>
+                Brooklyn College<br/>
                 • B.S. in Information Systems, Minor: Computer Science<br/>
                 • B.S. in Business Management<br/><br/>
                 Kingsborough Community College<br/>
