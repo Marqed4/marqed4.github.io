@@ -20,11 +20,19 @@ const SEMESTER_END = "2026-12-21";
 // 5. Only log days that have actually happened - don't log ahead of today.
 const entries = [
   {
+    date: "2026-10-08",
+    duration: 2.5,
+    category: "Design",
+    description: "Moved the project to a fresh Supabase database (v4900) and wrote its PostgreSQL schema script. Changed curators to jsonb and turned on row level security so the browser's anon key can only read a few public session columns and its own user rows. Documented it in a schema doc, put the Supabase schema screenshot into the README, design document and the PowerPoint's schema slide. In progress, transfering example sessions.",
+    challenges: "Both .env files still point at the old database, swap the keys, run the check script, and fix any policy that blocks sign-in or session history.",
+    reflection: "The old schema gave the anon key full access to every table, and that key ships in the frontend. Locking it down before the encrypted sessions go live was worth the extra time.",
+  },
+  {
     date: "2026-10-07",
     duration: 3.5,
     category: "Coding",
-    description: "Wrote the client-side crypto module (ECDH key exchange, HKDF key wrapping, AES-GCM). Limited the server's room-key relay to the sender's own session and committed the Docker setup.",
-    challenges: "The host role is client-supplied, so any client can join as host and delete a session; added a P0 card. The crypto module isn't wired into Host and Participant yet.",
+    description: "Wrote the client-side crypto module (ECDH key exchange, HKDF key wrapping, AES-GCM). Limited the server's room-key relay to the sender's own session and committed the Docker setup. Then wired the crypto into Home, Host and Participant: an encrypted checkbox on session creation, host key distribution, participant encrypt on submit, and host decrypt for the feed. The relay now also forwards the host's public key so joiners can unwrap the room key.",
+    challenges: "The host role is client-supplied, so any client can join as host and delete a session; added a P0 card. The wiring builds but I haven't run the live socket flow yet. Encrypted sessions can't cluster until client-side clustering (E2E-4) exists, and a refresh loses the room key (E2E-6).",
     reflection: "Writing the known limits into the module header made the remaining E2E cards concrete.",
   },
   {
