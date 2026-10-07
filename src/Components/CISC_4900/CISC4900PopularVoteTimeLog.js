@@ -20,13 +20,36 @@ const SEMESTER_END = "2026-12-21";
 // 5. Only log days that have actually happened - don't log ahead of today.
 const entries = [
   {
+    date: "2026-10-07",
+    duration: 0.5,
+    category: "Documentation",
+    description: "Added a Running with Docker section to the project README and trimmed the wordy 10-02 time log entry.",
+    challenges: "Docker is still not installed locally, so the documented steps are untested. Next: install Docker, run the build, and fill in the empty How To Deploy doc.",
+    reflection: "Time log entries read better short; two or three sentences per field is enough.",
+  },
+  {
+    date: "2026-10-06",
+    duration: 1,
+    category: "Coding",
+    description: "Containerized the app with Docker: a multi-stage Dockerfile (Node builds the Vite frontend, then Python 3.12 runs gunicorn with one eventlet worker serving the API and the built frontend), a docker-compose.yml, and a .dockerignore. Also weighed Docker, Kubernetes, Rust and Snowflake against the project's needs and chose Docker only.",
+    challenges: "Docker isn't installed on this machine, so the build is untested. Compose maps host port 6967 to container 2167 because the CORS and Socket.IO allowlist in app.py only permits http://localhost:6967. The backend must stay at one worker since SessionManager keeps session state in memory. Next: install Docker, test the build, and fill in the empty How To Deploy doc.",
+    reflection: "Kubernetes and Snowflake would add overhead without helping a single Flask service on Supabase, and Rust adds nothing over WebCrypto for the browser-side E2E work. A single container also gives the stale run instructions one command to replace.",
+  },
+  {
+    date: "2026-10-06",
+    duration: 1,
+    category: "Testing & Debugging",
+    description: "Audited the codebase against the kanban board to see which E2E items are really done, then moved six unstarted cards (E2E-5, E2E-6, E2E-7, NumPy/Pandas research, deployment guide, NFR testing) from In progress back to Ready.",
+    challenges: "The backend only relays pubkey_exchange and room_key_distribute events and stores ciphertext; the frontend has no crypto at all. FD1 pushes AI previews to the whole room with no approve-before-release gate. Issue #1 (backend decrypts by key) contradicts the E2E design, so it should be closed or rewritten. Next: build the client WebCrypto module (ECDH key exchange, room key wrap/unwrap, AES-GCM) and check that the target socket is in the same room before relaying a room key.",
+    reflection: "The board overstated progress: the three E2E cards I kept In progress are only half done, with the server side finished and the client side not started. Checking the code before trusting card status keeps the board honest.",
+  },
+  {
     date: "2026-10-02",
     duration: 5.5,
     category: "Documentation",
-    description: "Populated and organized the project's GitHub kanban board using the GitHub CLI: added 85 cards from the requirements reference (Done, In progress, Backlog), then audited the codebase for half-built features and added 10 Ready cards (E2E frontend crypto, encrypted-column migration, host check on the cluster route, rate-limit gaps, upvote enforcement," + 
-    "FD1 release phase, deploy docs, backend tests). Set Priority (P0-P2) and Size (XS-XL) on all ~95 cards and wrote a legend into the board's README.",
-    challenges: "Draft cards can't hold GitHub labels, so Priority/Size fields were used instead. The audit found the repo has no tests, the cluster route has no host check, and render.yaml points at the wrong frontend folder. Next: build frontend crypto.js and close the P0 security cards.",
-    reflection: "Auditing the code against the requirements doc showed several features marked done (rate limiting, upvotes, FD1) are only partly implemented, so the board is more honest now than the doc. Priority and Size values are my own estimates and need revisiting as work lands.",
+    description: "Built out the GitHub kanban board with the GitHub CLI. Added 85 cards from the requirements doc, audited the code for half-built features, and added 10 Ready cards for the gaps. Set Priority (P0-P2) and Size (XS-XL) on every card and wrote a legend in the board README.",
+    challenges: "Draft cards can't hold labels, so I used Priority and Size fields. The audit found no tests, no host check on the cluster route, and a wrong frontend folder in render.yaml. Next: frontend crypto and the P0 security cards.",
+    reflection: "Several features marked done in the requirements doc (rate limiting, upvotes, FD1) are only partly built, so the board is now more accurate than the doc. Priority and Size are my own estimates.",
   },
   {
     "date": "2026-09-25",
