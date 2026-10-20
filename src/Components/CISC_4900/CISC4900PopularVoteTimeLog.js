@@ -20,6 +20,22 @@ const SEMESTER_END = "2026-12-21";
 // 5. Only log days that have actually happened - don't log ahead of today.
 const entries = [
   {
+    date: "2026-10-19",
+    duration: 0.5,
+    category: "Coding",
+    description: "Reviewed and cleaned up the comments in crypto.js, the module handling in-browser decrypting for encrypted sessions.",
+    challenges: "I didn't originally plan to do the decryption in the browser, but it turned out to be a lot more resourceful than routing it through the server.",
+    reflection: "Keeping decryption client-side avoids ever exposing plaintext to the backend, which fits the E2E design better than my original plan.",
+  },
+  {
+    date: "2026-10-15",
+    duration: 4,
+    category: "Coding",
+    description: "Built client-side TF-IDF clustering for encrypted sessions (E2E-4), closing the gap where encrypted sessions could collect submissions but never reach RESULTS. Found and fixed two plaintext-leak bugs in the cluster-submit path along the way, and a silent error-swallow in session creation. Added a pytest suite covering the touched backend code.",
+    challenges: "The backend's /cluster route already committed to a specific cluster shape (representativeQuery/questions[].text) before any client-side clustering existed, so the E2E CLUSTERING PLAN.md's original id-mapping sketch didn't fit without a bigger redesign.",
+    reflection: "Would plan the storage contract and the clustering approach together next time."
+  },
+  {
     date: "2026-10-08",
     duration: 2.5,
     category: "Design",
