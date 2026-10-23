@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dccd9a60.css",
-    "main.js": "/static/js/main.30a1c126.js",
+    "main.js": "/static/js/main.245b531a.js",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Site.gif": "/static/media/Site.c78ea60fb3d2036cf57f.gif",
     "static/media/Music Off.gif": "/static/media/Music Off.29181053b175715be2a0.gif",
@@ -38,6 +38,7 @@
     "static/media/Settings View.png": "/static/media/Settings View.fdb0ab1f8dd164afff0b.png",
     "static/media/diva_icon.gif": "/static/media/diva_icon.82032fd03d76427ab01f.gif",
     "static/media/IMG_0987.jpg": "/static/media/IMG_0987.7e2e941f4ef305b6e59d.jpg",
+    "static/media/IMG_1882.jpg": "/static/media/IMG_1882.571fa648823dd52f4b16.jpg",
     "static/media/CISC-4900_PopularVote_Power_Point.gif": "/static/media/CISC-4900_PopularVote_Power_Point.e07aa7e2292a7d350d18.gif",
     "static/media/CISC-4900_PopularVote_Time_Log.gif": "/static/media/CISC-4900_PopularVote_Time_Log.e86eef0577894d252981.gif",
     "static/media/YouTube Navbar Active.gif": "/static/media/YouTube Navbar Active.7e883cb6211699efe83b.gif",
@@ -99,10 +100,10 @@
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "index.html": "/index.html",
     "main.dccd9a60.css.map": "/static/css/main.dccd9a60.css.map",
-    "main.30a1c126.js.map": "/static/js/main.30a1c126.js.map"
+    "main.245b531a.js.map": "/static/js/main.245b531a.js.map"
   },
   "entrypoints": [
     "static/css/main.dccd9a60.css",
-    "static/js/main.30a1c126.js"
+    "static/js/main.245b531a.js"
   ]
 }
