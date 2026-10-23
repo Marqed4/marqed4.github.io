@@ -21,7 +21,7 @@ const SEMESTER_END = "2026-12-21";
 const entries = [
   {
     date: "2026-10-23",
-    duration: 2,
+    duration: 4,
     category: "Coding",
     description: "Curators can now answer clusters from the participant view, before this promoting someone changed nothing on their screen. Fixed the host listening for curator:updated when the backend emits curator:promoted. Saved the E2E room key per session in localStorage (E2E-6) so a refresh or server restart no longer makes encrypted sessions unreadable, and added an opt-in setting to clear saved data when leaving the site.",
     challenges: "A session made before the fix had already lost its key, so its content can't be recovered. The clear-on-exit setting also runs on refresh, since the browser can't tell a refresh from closing the tab.",

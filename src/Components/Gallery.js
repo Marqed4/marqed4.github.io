@@ -20,6 +20,7 @@ const PetsArray = [
     { id: "IMG_1222", image: PetGallery.IMG_1222, description: "You mirin' brah? 😺" },
     { id: "IMG_0002", image: PetGallery.IMG_0002, description: "Sqwishy" },
     { id: "IMG_1336", image: PetGallery.IMG_1336, description: "Great Company" },
+    { id: "IMG_1882", image: PetGallery.IMG_1882, description: "Maybe, fe-line relaxed." },
 ];
 
 // Each photo will contain it's own data (picture and description).
