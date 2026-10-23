@@ -20,6 +20,22 @@ const SEMESTER_END = "2026-12-21";
 // 5. Only log days that have actually happened - don't log ahead of today.
 const entries = [
   {
+    date: "2026-10-23",
+    duration: 2,
+    category: "Coding",
+    description: "Curators can now answer clusters from the participant view, before this promoting someone changed nothing on their screen. Fixed the host listening for curator:updated when the backend emits curator:promoted. Saved the E2E room key per session in localStorage (E2E-6) so a refresh or server restart no longer makes encrypted sessions unreadable, and added an opt-in setting to clear saved data when leaving the site.",
+    challenges: "A session made before the fix had already lost its key, so its content can't be recovered. The clear-on-exit setting also runs on refresh, since the browser can't tell a refresh from closing the tab.",
+    reflection: "Keeping the key in localStorage trades some device-level exposure for usability, but the server still never sees it.",
+  },
+  {
+    date: "2026-10-22",
+    duration: 1,
+    category: "Testing & Debugging",
+    description: "Fixed the site not loading data locally. The backend's service role key in .env was actually the anon key, so row level security denied every query and session loading failed. Also made the root npm run dev start Flask and Vite together, since it only ran the frontend and new sessions were stuck on the NEW placeholder.",
+    challenges: "The Python on PATH was the MSYS one without Flask, so the dev script has to find a Python that can import the backend's packages.",
+    reflection: "Decoding the key's role claim found the problem faster than reading the code. The schema itself was fine.",
+  },
+  {
     date: "2026-10-19",
     duration: 0.5,
     category: "Coding",
