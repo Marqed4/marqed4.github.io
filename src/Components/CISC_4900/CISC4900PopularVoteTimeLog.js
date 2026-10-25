@@ -92,12 +92,30 @@ const entries = [
     reflection: "The board overstated progress. Checking the code before trusting card status keeps it honest.",
   },
   {
+    date: "2026-10-05",
+    duration: 0,
+    category: "Other",
+    description: "Turned in the Peer Evaluation (Professional & Ethic Practice) for the course.",
+  },
+  {
     date: "2026-10-02",
     duration: 5.5,
     category: "Documentation",
     description: "Built out the GitHub kanban board with the GitHub CLI. Added 85 cards from the requirements doc, audited the code for half-built features, and added 10 Ready cards for the gaps. Set Priority (P0-P2) and Size (XS-XL) on every card and wrote a legend in the board README.",
     challenges: "Draft cards can't hold labels, so I used Priority and Size fields. The audit found no tests, no host check on the cluster route, and a wrong frontend folder in render.yaml. Next: frontend crypto and the P0 security cards.",
     reflection: "Several features marked done in the requirements doc (rate limiting, upvotes, FD1) are only partly built, so the board is now more accurate than the doc. Priority and Size are my own estimates.",
+  },
+  {
+    date: "2026-09-29",
+    duration: 0,
+    category: "Other",
+    description: "Gave the live presentation for the course and received 10/10 points with written feedback.",
+  },
+  {
+    date: "2026-09-28",
+    duration: 0,
+    category: "Other",
+    description: "Turned in the Peer Evaluation (Product Thinking) for the course.",
   },
   {
     "date": "2026-09-25",
@@ -144,6 +162,12 @@ const entries = [
     description: "Drafted an E2E encryption and client-side clustering plan for PopularVote per Prof. Chuang's advice, so the server and Supabase never see plaintext.",
     challenges: "Gemini can't cluster ciphertext, so local embeddings must replace it for encrypted sessions, with a catch-up pass on moderator reconnect.",
     reflection: "Still undecided on opt-in vs. global encryption, TF-IDF vs. embeddings, and self-hosted vs. CDN model files; no schema changes needed.",
+  },
+  {
+    date: "2026-09-14",
+    duration: 0,
+    category: "Other",
+    description: "Submitted the Slides (1st Draft) for the course and received 10/10 points.",
   },
   {
     date: "2026-09-14",
