@@ -213,3 +213,10 @@
     max-width: 100%;
   }
 }
+
+.popularvote-calendar-name {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  max-width: min(480px, 80%);
+}

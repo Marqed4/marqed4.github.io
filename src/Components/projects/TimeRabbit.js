@@ -1,13 +1,13 @@
 import { useEffect } from "react";
-import Navbar from "./Navbar.js"
+import Navbar from "../layout/Navbar.js"
 import "./TimeRabbit.css"
 
-// import TimeRabbitName from "../resources/art/time rabbit page graphics/TimeRabbit.gif"
-import AppView from "../resources/art/time rabbit page graphics/view_app.png"
+// import TimeRabbitName from "../../resources/art/time rabbit page graphics/TimeRabbit.gif"
+import AppView from "../../resources/art/time rabbit page graphics/view_app.png"
 
-import Overview from "../resources/art/Background Project/Gradients/Overview Inactive.gif"
-import Features from "../resources/art/Background Project/Gradients/Features Inactive.gif"
-import Architecture from "../resources/art/Background Project/Gradients/Architecture Inactive.gif"
+import Overview from "../../resources/art/Background Project/Gradients/Overview Inactive.gif"
+import Features from "../../resources/art/Background Project/Gradients/Features Inactive.gif"
+import Architecture from "../../resources/art/Background Project/Gradients/Architecture Inactive.gif"
 
 const sections = [
   {

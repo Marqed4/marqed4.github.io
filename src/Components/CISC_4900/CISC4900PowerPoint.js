@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { init } from "pptx-preview";
-import Navbar from "../Navbar.js";
+import Navbar from "../layout/Navbar.js";
 import "./CISC4900PowerPoint.css";
 import PV_PPTX from "../../resources/art/popularvote page graphics/CISC-4900_PopularVote_Power_Point.gif"
 

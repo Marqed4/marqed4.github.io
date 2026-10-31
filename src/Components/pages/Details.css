@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Latin";
-  src: url("../resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
+  src: url("../../resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
 }
 
 @keyframes float {
@@ -72,7 +72,7 @@
 .details-layout-coding-lang-framework,
 .details-layout-emails,
 .details-layout-resume {
-  /* background-image: url('../resources/art/card artwork/Opal Grain.gif'); */
+  /* background-image: url('../../resources/art/card artwork/Opal Grain.gif'); */
   background-size: 400px;
   background-repeat: repeat;
   background-position: top left;
@@ -194,4 +194,15 @@
   font-family: 'Times New Roman', Times, serif;
   font-size: 1rem;
   line-height: 1.7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .details-education-header,
+  .details-resume-header,
+  .details-interests-header,
+  .details-skills-edit-software,
+  .details-skills-lang-framework,
+  .details-emails-header {
+    animation: none;
+  }
 }

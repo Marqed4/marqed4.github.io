@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Navbar from "../Navbar.js";
+import Navbar from "../layout/Navbar.js";
 import "./CISC4900PopularVoteTimeLog.css";
 
 import PopularVoteTimeLogTitle from "../../resources/art/popularvote page graphics/CISC-4900_PopularVote_Time_Log.gif";

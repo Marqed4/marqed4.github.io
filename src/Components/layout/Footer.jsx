@@ -1,4 +1,4 @@
-import FooterGif from "../resources/art/footer graffiti/footer_infinity.gif";
+import FooterGif from "../../resources/art/footer graffiti/footer_infinity.gif";
 
 export default function Footer() {
   return (

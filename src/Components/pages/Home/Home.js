@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 
-import HomeBanner from "../resources/art/Background Project/Gradients/Orange Glob Marble.gif"
-import Icon from "./Icon.js";
-import Navbar from "./Navbar.js"
-import Footer from "./Footer.jsx"
-import MediaPreviews from "./MediaPreviews.js"
-import Calsigh from "./Calisigh.js"
-import Projects, { ProjectsInactive, ProjectsActive } from "./Projects.js";
-import Gallery, { GalleryInactive, GalleryActive } from "./Gallery.js";
+import HomeBanner from "../../../resources/art/Background Project/Gradients/Orange Glob Marble.gif"
+import Navbar from "../../layout/Navbar.js"
+import Footer from "../../layout/Footer.jsx"
+import MediaPreviews from "./media/MediaPreviews.js"
+import { ProjectsInactive, ProjectsActive } from "../Projects.js";
+import { GalleryInactive, GalleryActive } from "../Gallery.js";
 
 function HomeItem({ labelActive, labelInactive, iconActive, iconInactive, labelClass, iconClass, hovered }) {
   return (
@@ -56,15 +54,31 @@ const Home = () => {
         <div className="home-content">
           <div className="home-card">
             <p>
-            Hey, I’m Zach! Most people online know me as Marqed.<br /><br />
-            This is my personal website, where I share my work and projects as an aspiring professional developer.<br /><br />
-            
-            On this site, you can find a broad selection of personal/joint coding projects and other creative endeavors.
+            Hi, I’m Zach, though most people online know me as Marqed.<br /><br />
+            I’m an aspiring professional developer who builds full-stack apps and desktop tools. This site is where I share that work, along with a few creative side projects.
             </p>
           </div>
           <div className="home-card">
+            <p className="home-card-label">Featured project</p>
             <p>
-            Thanks for stopping by, and I hope you enjoy exploring this site!
+            <strong>PopularVote</strong> is a live, anonymous Q&amp;A tool. Participants ask freely, AI clusters similar questions by meaning, and hosts answer themes instead of noise.
+            </p>
+            <p className="home-links">
+              <a href="https://popularvote.marqed.it" target="_blank" rel="noopener noreferrer">Live site</a>
+              {" · "}
+              <a href="/PopularVote">Case study</a>
+              {" · "}
+              <a href="https://github.com/Marqed4/PopularVote" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </p>
+          </div>
+          <div className="home-card">
+            <p className="home-card-label">Get in touch</p>
+            <p className="home-links">
+              <a href="mailto:zacherywfrancis@gmail.com">Email me</a>
+              {" · "}
+              <a href="https://www.linkedin.com/in/zachery-francis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              {" · "}
+              <a href="/Resume">Resume</a>
             </p>
           </div>
           <div className="home-card portfolio-card">

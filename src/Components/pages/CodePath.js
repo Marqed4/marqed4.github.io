@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import Navbar from "./Navbar.js"
-import Footer from "./Footer.jsx"
-import HomeIcon from "./Icon.js";
+import Navbar from "../layout/Navbar.js"
+import Footer from "../layout/Footer.jsx"
+import HomeIcon from "../layout/Icon.js";
 import "./CodePath.css"
 
 const videos = [

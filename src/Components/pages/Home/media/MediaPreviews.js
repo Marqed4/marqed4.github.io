@@ -2,9 +2,9 @@ import { useState } from "react"
 import HomeEdits from "./HomeEdits"
 import HomeShorts from "./HomeShorts"
 
-import ShowContentInactive from "../resources/art/Background Project/Gradients/Preview Content Inactive.gif"
-import ShowContentActive from "../resources/art/Background Project/Gradients/Hide Content Active.gif"
-import DownArrow from "../resources/art/Background Project/Gradients/Down Arrow Orange Marble Gradient.gif"
+import ShowContentInactive from "../../../../resources/art/Background Project/Gradients/Preview Content Inactive.gif"
+import ShowContentActive from "../../../../resources/art/Background Project/Gradients/Hide Content Active.gif"
+import DownArrow from "../../../../resources/art/Background Project/Gradients/Down Arrow Orange Marble Gradient.gif"
 
 const MediaPreviews = () => {
     const [contentOpen, setContentOpen] = useState(false);

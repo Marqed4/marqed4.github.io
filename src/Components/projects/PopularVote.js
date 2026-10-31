@@ -1,19 +1,19 @@
 import { useEffect } from "react";
-import Navbar from "./Navbar.js";
+import Navbar from "../layout/Navbar.js";
 import "./PopularVote.css";
 
-import PopularVoteName   from "../resources/art/popularvote page graphics/Popular Vote.gif";
-import MainPagePreview   from "../resources/art/popularvote page graphics/Main-Page-Theme-Preview.gif";
-import LandingView       from "../resources/art/popularvote page graphics/landing-page.gif";
-import OpenSessionView   from "../resources/art/popularvote page graphics/open-session.gif";
-import HostsScrollDown   from "../resources/art/popularvote page graphics/Hosts-Scroll-Down.gif";
-import ParticipantsView  from "../resources/art/popularvote page graphics/participants-view.gif";
-import ParticipantScroll from "../resources/art/popularvote page graphics/Participant-Scroll-Down.gif";
-import HostsEndSession   from "../resources/art/popularvote page graphics/Hosts-End-Session-and-Summary-PDF-download.gif";
+import PopularVoteName   from "../../resources/art/popularvote page graphics/Popular Vote.gif";
+import MainPagePreview   from "../../resources/art/popularvote page graphics/Main-Page-Theme-Preview.gif";
+import LandingView       from "../../resources/art/popularvote page graphics/landing-page.gif";
+import OpenSessionView   from "../../resources/art/popularvote page graphics/open-session.gif";
+import HostsScrollDown   from "../../resources/art/popularvote page graphics/Hosts-Scroll-Down.gif";
+import ParticipantsView  from "../../resources/art/popularvote page graphics/participants-view.gif";
+import ParticipantScroll from "../../resources/art/popularvote page graphics/Participant-Scroll-Down.gif";
+import HostsEndSession   from "../../resources/art/popularvote page graphics/Hosts-End-Session-and-Summary-PDF-download.gif";
 
-import Overview     from "../resources/art/Background Project/Gradients/Overview Inactive.gif";
-import Features     from "../resources/art/Background Project/Gradients/Features Inactive.gif";
-import Architecture from "../resources/art/Background Project/Gradients/Architecture Inactive.gif";
+import Overview     from "../../resources/art/Background Project/Gradients/Overview Inactive.gif";
+import Features     from "../../resources/art/Background Project/Gradients/Features Inactive.gif";
+import Architecture from "../../resources/art/Background Project/Gradients/Architecture Inactive.gif";
 
 const sections = [
   {
@@ -150,12 +150,12 @@ const PopularVote = () => {
               <p className="popular-vote-view-label">{label}</p>
               <ul className="popular-vote-view-list">
                 {items.map((item, i) => {
-                  const [bold, ...rest] = item.split(" * ");
+                  const [bold, ...rest] = item.split(" - ");
                   return (
                     <li key={i}>
                       <span className="popular-vote-tag">{tag}.{i + 1}</span>
                       {rest.length ? (
-                        <><strong>{bold}</strong>{" * "}{rest.join(" * ")}</>
+                        <><strong>{bold}</strong>{" - "}{rest.join(" - ")}</>
                       ) : (
                         bold
                       )}

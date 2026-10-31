@@ -1,66 +1,63 @@
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
-import UnfoundPage from "./Components/UnfoundPage.jsx";
+import NotFound from "./Components/pages/NotFound.jsx";
 
 import './App.css';
 
 // <---- Landing Page ---->
-import './Components/Icon.css';
-import './Components/Navbar.css';
-import './Components/Footer.css'
-import './Components/HomeBody.css';
-import './Components/HomeBanner.css';
-import './Components/HomePortfiolio.css'
-import './Components/HomeText.css';
-import './Components/YouTubeDropdown.css';
-import './Components/HomeEditsShorts.css';
-import './Components/HomeEdits.css';
-import './Components/HomeShorts.css';
-import './Components/MediaPreviews.css';
+import './Components/layout/Icon.css';
+import './Components/layout/Navbar.css';
+import './Components/layout/Footer.css'
+import './Components/pages/Home/HomeBody.css';
+import './Components/pages/Home/HomePortfolio.css'
+import './Components/pages/Home/HomeText.css';
+import './Components/pages/Home/media/HomeEdits.css';
+import './Components/pages/Home/media/HomeShorts.css';
+import './Components/pages/Home/media/MediaPreviews.css';
 
 // <---- Landing Page ---->
-import Home from "./Components/Home";
+import Home from "./Components/pages/Home/Home";
 
 // <---- Details Page ---->
-import './Components/Details.css';
-import Details from "./Components/Details";
+import './Components/pages/Details.css';
+import Details from "./Components/pages/Details";
 
 // <---- Projects Page ---->
-import './Components/Projects.css';
-import Projects from "./Components/Projects";
+import './Components/pages/Projects.css';
+import Projects from "./Components/pages/Projects";
 
 // <---- Gallery Page ---->
-import './Components/Gallery.css';
-import Gallery from "./Components/Gallery";
+import './Components/pages/Gallery.css';
+import Gallery from "./Components/pages/Gallery";
 
 // <---- Resume Page ---->
-import './Components/Resume.css';
-import Resume from "./Components/Resume";
+import './Components/pages/Resume.css';
+import Resume from "./Components/pages/Resume";
 
 // <---- Diva FFMPEG Page ---->
-import './Components/DivaFFMPEG.css';
-import DivaFFMPEG from "./Components/DivaFFMPEG.js";
+import './Components/projects/DivaFFMPEG.css';
+import DivaFFMPEG from "./Components/projects/DivaFFMPEG.js";
 
 // <---- Sudoku Proj Page ---->
-import './Components/SolveSudoku.css';
-import Sudoku from "./Components/SolveSudoku.js";
+import './Components/projects/SolveSudoku.css';
+import Sudoku from "./Components/projects/SolveSudoku.js";
 
 // <---- Custom Calendar Proj Page ---->
-import './Components/Calisigh.css';
-import Calisigh from "./Components/Calisigh.js";
+import './Components/projects/Calisigh.css';
+import Calisigh from "./Components/projects/Calisigh.js";
 
 // <---- PopularVote Proj Page ---->
-import './Components/PopularVote.css';
-import PopularVote from "./Components/PopularVote.js";
+import './Components/projects/PopularVote.css';
+import PopularVote from "./Components/projects/PopularVote.js";
 
 // <---- Time Rabbit Proj Page ---->
-import './Components/TimeRabbit.css';
-import TimeRabbit from "./Components/TimeRabbit.js";
+import './Components/projects/TimeRabbit.css';
+import TimeRabbit from "./Components/projects/TimeRabbit.js";
 
 // <---- CodePath Page (url-only, no nav link) ---->
-import './Components/CodePath.css';
-import CodePath from "./Components/CodePath.js";
+import './Components/pages/CodePath.css';
+import CodePath from "./Components/pages/CodePath.js";
 
 // <---- PopularVote Time Log Page (url-only, no nav link) ---->
 import './Components/CISC_4900/CISC4900PopularVoteTimeLog.css';
@@ -121,7 +118,7 @@ const App = () => {
           <Route path="/CISC-4900-PopularVote-TimeLog" element={<PopularVoteTimeLog/>} />
           <Route path="/CISC-4900-PopularVote-PowerPointPresentation" element={<CISC4900PowerPoint/>} />
           <Route path="/CISC-4900-PopularVote" element={<CISC4900PopularVote/>} />
-          <Route path="*" element={<UnfoundPage/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </motion.div>
     </>

@@ -5,13 +5,6 @@
 }
 
 .custom-calendar-logo {
-  height: 200px;
-  width: auto;
-  display: block;
-  margin: 0 auto -35px auto;
-}
-
-.custom-calendar-logo {
   height: 120px;
   width: auto;
   display: block;
@@ -79,7 +72,6 @@
 .overview-body,
 .features-body,
 .architecture-body {
-  display: flexbox;
   font-weight: 225;
   -webkit-text-stroke: 1px black;
   transform: translate(10px, 0px);
@@ -110,6 +102,10 @@
   justify-content: center;
   gap: 30px;
   padding: 20px 40px 40px 40px;
+}
+
+.months-view-section--flip {
+  flex-direction: row-reverse;
 }
 
 .app-controls-section {
@@ -223,7 +219,11 @@
   .years-view-section,
   .settings-view-section,
   .chat-view-section,
-  .app-controls-section {
+  .months-view-section--flip {
+  flex-direction: row-reverse;
+}
+
+.app-controls-section {
     flex-direction: column;
     align-items: center;
     padding: 20px;
@@ -278,7 +278,7 @@
   margin: 12px 0;
 }
 
-.png-columer {
+.png-column {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -286,7 +286,7 @@
   width: 520px;
 }
 
-.png-columer .months-view-example {
+.png-column .months-view-example {
   width: 100%;
   max-width: 100%;
   height: auto;

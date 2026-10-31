@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Latin";
-  src: url("../resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
+  src: url("../../../resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
 }
 
 .home-container {
@@ -174,4 +174,22 @@
   .home-banner-container {
     width: 80%;
   }
+}
+
+.home-card p.home-card-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.5px black;
+  margin-bottom: 0;
+}
+
+.home-card p.home-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.home-card p.home-links a:hover {
+  color: #8400ff;
 }

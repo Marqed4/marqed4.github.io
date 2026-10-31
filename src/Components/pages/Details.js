@@ -1,13 +1,13 @@
 import { useEffect } from "react";
-import Navbar from "./Navbar.js"
-import Footer from "./Footer.jsx"
-import DetailsNavbarInactive from "../resources/art/details page graphic header/Details Navbar Inactive.gif"
-import ContactDetailsInactive from "../resources/art/details page graphic header/Contacts Details Inactive.gif"
-import EducationDetailsInactive from "../resources/art/details page graphic header/Education Details Inactive.gif"
-import InterestsDetailsInactive from "../resources/art/details page graphic header/Interests Details Inactive.gif"
-import EditingSoftwareDetailsInactive from "../resources/art/details page graphic header/Editing Software Details Inactive.gif"
-import CodingLangFrameworkDetailsInactive from "../resources/art/details page graphic header/Tech Stack.gif"
-import ResumeDetailsInactive from "../resources/art/details page graphic header/Resume Details Inactive.gif"
+import Navbar from "../layout/Navbar.js"
+import Footer from "../layout/Footer.jsx"
+import DetailsNavbarInactive from "../../resources/art/details page graphic header/Details Navbar Inactive.gif"
+import ContactDetailsInactive from "../../resources/art/details page graphic header/Contacts Details Inactive.gif"
+import EducationDetailsInactive from "../../resources/art/details page graphic header/Education Details Inactive.gif"
+import InterestsDetailsInactive from "../../resources/art/details page graphic header/Interests Details Inactive.gif"
+import EditingSoftwareDetailsInactive from "../../resources/art/details page graphic header/Editing Software Details Inactive.gif"
+import CodingLangFrameworkDetailsInactive from "../../resources/art/details page graphic header/Tech Stack.gif"
+import ResumeDetailsInactive from "../../resources/art/details page graphic header/Resume Details Inactive.gif"
 
 function copy(text) {
   navigator.clipboard.writeText(text).then(() => {
@@ -55,7 +55,7 @@ const Details = () => {
                   <u>View Resume</u>
                 </a>
                 <br/>
-                <a href="../documents/Zachery_Francis-June_2026.pdf" download>
+                <a href={`${process.env.PUBLIC_URL}/documents/ZacheryFrancis Resume 10-4-2026.pdf`} download>
                   <u>Download Resume</u>
                 </a>
               </p>

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Icon from "./Icon.js";
-import Navbar from "./Navbar.js";
+import Icon from "../layout/Icon.js";
+import Navbar from "../layout/Navbar.js";
 
 const RESUME_URL = `${process.env.PUBLIC_URL}/documents/ZacheryFrancis Resume 10-4-2026.pdf`;
 

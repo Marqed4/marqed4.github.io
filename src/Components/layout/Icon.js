@@ -1,4 +1,4 @@
-import Logo from "../resources/art/Background Project/Gradients/Orange Glob Marble Head.gif";
+import Logo from "../../resources/art/Background Project/Gradients/Orange Glob Marble Head.gif";
 
 const Icon = () => {
   return (

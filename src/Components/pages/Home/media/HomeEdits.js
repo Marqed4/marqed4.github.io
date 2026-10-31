@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-import ShowEditsInactive from "../resources/art/Background Project/Gradients/Show Edits Inactive.gif"
-import HideEditsActive from "../resources/art/Background Project/Gradients/Hide Edits Active.gif"
+import ShowEditsInactive from "../../../../resources/art/Background Project/Gradients/Show Edits Inactive.gif"
+import HideEditsActive from "../../../../resources/art/Background Project/Gradients/Hide Edits Active.gif"
 
 const HomeEdits = ({ isOpen, onToggle, onVideoActive }) => {
     const [activeVideo, setActiveVideo] = useState(null);

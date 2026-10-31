@@ -1,19 +1,19 @@
 import { useEffect } from "react";
-import Navbar from "./Navbar.js";
-import Footer from "./Footer.jsx"
+import Navbar from "../layout/Navbar.js";
+import Footer from "../layout/Footer.jsx"
 import "./Projects.css";
 
-import ProjectsInactive from "../resources/art/projects page graphics/Projects Inactive.gif"
-import ProjectsActive from "../resources/art/projects page graphics/Projects Active.gif"
+import ProjectsInactive from "../../resources/art/projects page graphics/Projects Inactive.gif"
+import ProjectsActive from "../../resources/art/projects page graphics/Projects Active.gif"
 
-import ExternalLinkButton from "../resources/art/projects page graphics/External Link Button.gif"
-import ExternalRepoButton from "../resources/art/projects page graphics/External Repo Button.gif"
+import ExternalLinkButton from "../../resources/art/projects page graphics/External Link Button.gif"
+import ExternalRepoButton from "../../resources/art/projects page graphics/External Repo Button.gif"
 
-import DivaFFMPEGLogo from "../resources/art/diva ffmpeg page graphics/diva_icon.gif";
-import CalisighLogo from "../resources/art/calisigh page graphics/icon.png";
-import PopularVoteLogo from "../resources/art/popularvote page graphics/Favicon.png"
-import SudokuLogo from "../resources/art/sudoku page graphics/Favicon.png"
-import TimeRabbitLogo from "../resources/art/time rabbit page graphics/Time_Rabbit.png"
+import DivaFFMPEGLogo from "../../resources/art/diva ffmpeg page graphics/diva_icon.gif";
+import CalisighLogo from "../../resources/art/calisigh page graphics/icon.png";
+import PopularVoteLogo from "../../resources/art/popularvote page graphics/Favicon.png"
+import SudokuLogo from "../../resources/art/sudoku page graphics/Favicon.png"
+import TimeRabbitLogo from "../../resources/art/time rabbit page graphics/Time_Rabbit.png"
 
 // Currently mentioned project list. 
 const ProjectsArray = [
@@ -37,7 +37,7 @@ const ProjectsArray = [
   },
   // CISC 4900 - PopularVote
   {
-    id: 2,
+    id: 3,
     logo: PopularVoteLogo,
     repository: "https://github.com/Marqed4/CISC-4900-PopularVote",
     title: "CISC-4900-PopularVote",
@@ -46,7 +46,7 @@ const ProjectsArray = [
   },
   // Diva FFMPEG
   {
-    id: 2,
+    id: 4,
     logo: DivaFFMPEGLogo,
     repository: "https://github.com/Marqed4/DivaFFMPEG",
     title: "Diva FFMPEG",
@@ -54,7 +54,7 @@ const ProjectsArray = [
   },
   // Sudoku
   {
-    id: 3,
+    id: 5,
     logo: SudokuLogo,
     link: "https://sudoku.marqed.it",
     repository: "https://github.com/Marqed4/Sudoku",
@@ -63,7 +63,7 @@ const ProjectsArray = [
   },
   // Time Rabbit
   {
-    id: 3,
+    id: 6,
     logo: TimeRabbitLogo,
     repository: "https://github.com/Marqed4/TimeRabbit",
     title: "TimeRabbit",
@@ -100,6 +100,7 @@ const Projects = () => {
                   >
                     <img
                       src={ExternalLinkButton}
+                      alt={project.title + " live site"}
                       className="external-link-btn external-btn-slot-1"
                     />
                   </a>
@@ -115,6 +116,7 @@ const Projects = () => {
                   >
                     <img
                       src={ExternalRepoButton}
+                      alt={project.title + " repository"}
                       className={`external-repo-btn ${project.link ? "external-btn-slot-2" : "external-btn-slot-1"}`}
                     />
                   </a>

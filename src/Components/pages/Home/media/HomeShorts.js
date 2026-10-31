@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-import ShowShortsInactive from "../resources/art/Background Project/Gradients/Show Shorts Inactive.gif"
-import HideShortsActive from "../resources/art/Background Project/Gradients/Hide Shorts Active.gif"
+import ShowShortsInactive from "../../../../resources/art/Background Project/Gradients/Show Shorts Inactive.gif"
+import HideShortsActive from "../../../../resources/art/Background Project/Gradients/Hide Shorts Active.gif"
 
 const HomeShorts = ({ isOpen, onToggle }) => {
     const [activeVideo, setActiveVideo] = useState(null);

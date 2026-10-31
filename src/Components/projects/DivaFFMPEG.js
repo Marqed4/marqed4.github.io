@@ -1,15 +1,15 @@
 import { useEffect } from "react";
-import Navbar from "./Navbar.js";
-import Footer from "./Footer.jsx";
+import Navbar from "../layout/Navbar.js";
+import Footer from "../layout/Footer.jsx";
 import "./DivaFFMPEG.css";
 
-import Diva from "../resources/art/diva ffmpeg page graphics/Diva FFMPEG.gif";
-import Frontpage from "../resources/art/diva ffmpeg page graphics/frontpage.gif";
-import VideoTools from "../resources/art/diva ffmpeg page graphics/video_tools.gif";
+import Diva from "../../resources/art/diva ffmpeg page graphics/Diva FFMPEG.gif";
+import Frontpage from "../../resources/art/diva ffmpeg page graphics/frontpage.gif";
+import VideoTools from "../../resources/art/diva ffmpeg page graphics/video_tools.gif";
 
-import Overview     from "../resources/art/Background Project/Gradients/Overview Inactive.gif";
-import Features     from "../resources/art/Background Project/Gradients/Features Inactive.gif";
-import Architecture from "../resources/art/Background Project/Gradients/Architecture Inactive.gif";
+import Overview     from "../../resources/art/Background Project/Gradients/Overview Inactive.gif";
+import Features     from "../../resources/art/Background Project/Gradients/Features Inactive.gif";
+import Architecture from "../../resources/art/Background Project/Gradients/Architecture Inactive.gif";
 
 const sections = [
   {

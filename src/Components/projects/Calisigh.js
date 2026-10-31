@@ -1,18 +1,18 @@
 import { useEffect } from "react";
-import Navbar from "./Navbar.js"
+import Navbar from "../layout/Navbar.js"
 
-import CalisighName from "../resources/art/calisigh page graphics/Calisigh.gif"
-import Overview from "../resources/art/Background Project/Gradients/Overview Inactive.gif"
-import Features from "../resources/art/Background Project/Gradients/Features Inactive.gif"
-import Architecture from "../resources/art/Background Project/Gradients/Architecture Inactive.gif"
-import MonthsView from "../resources/art/calisigh page graphics/Months View.png"
-import YearsView from "../resources/art/calisigh page graphics/Years View.png"
-import ChatView from "../resources/art/calisigh page graphics/Chat View.png"
-import SettingsView from "../resources/art/calisigh page graphics/Settings View.png"
-import AddAlarmView from "../resources/art/calisigh page graphics/Add Alarm View.png"
-import EditAlarmView from "../resources/art/calisigh page graphics/Edit Alarm View.png"
-import EditDuplicateAlarmView from "../resources/art/calisigh page graphics/Duplicate Date Selection.png"
-import EventView from "../resources/art/calisigh page graphics/Event View.png"
+import CalisighName from "../../resources/art/calisigh page graphics/Calisigh.gif"
+import Overview from "../../resources/art/Background Project/Gradients/Overview Inactive.gif"
+import Features from "../../resources/art/Background Project/Gradients/Features Inactive.gif"
+import Architecture from "../../resources/art/Background Project/Gradients/Architecture Inactive.gif"
+import MonthsView from "../../resources/art/calisigh page graphics/Months View.png"
+import YearsView from "../../resources/art/calisigh page graphics/Years View.png"
+import ChatView from "../../resources/art/calisigh page graphics/Chat View.png"
+import SettingsView from "../../resources/art/calisigh page graphics/Settings View.png"
+import AddAlarmView from "../../resources/art/calisigh page graphics/Add Alarm View.png"
+import EditAlarmView from "../../resources/art/calisigh page graphics/Edit Alarm View.png"
+import EditDuplicateAlarmView from "../../resources/art/calisigh page graphics/Duplicate Date Selection.png"
+import EventView from "../../resources/art/calisigh page graphics/Event View.png"
 
 const sections = [
   {
@@ -108,7 +108,7 @@ const sections = [
   },
 ];
 
-const Calsigh = () => {
+const Calisigh = () => {
 
   useEffect(() => {
     document.title = "Calisigh";
@@ -234,4 +234,4 @@ const Calsigh = () => {
   );
 };
 
-export default Calsigh;
+export default Calisigh;

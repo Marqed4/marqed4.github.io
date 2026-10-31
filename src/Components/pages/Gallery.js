@@ -1,12 +1,12 @@
 import { useEffect } from "react";
-import Navbar from "./Navbar.js";
-import Footer from "./Footer.jsx"
+import Navbar from "../layout/Navbar.js";
+import Footer from "../layout/Footer.jsx"
 import "./Gallery.css";
 
-import GalleryInactive from "../resources/art/gallery page graphics/Gallery Inactive.gif"
-import GalleryActive from "../resources/art/gallery page graphics/Gallery Active.gif"
+import GalleryInactive from "../../resources/art/gallery page graphics/Gallery Inactive.gif"
+import GalleryActive from "../../resources/art/gallery page graphics/Gallery Active.gif"
 
-import { PetGallery }  from "../resources/art/gallery page graphics/index.js";
+import { PetGallery }  from "../../resources/art/gallery page graphics/index.js";
 
 const PetsArray = [
     { id: "IMG_0510", image: PetGallery.IMG_0510, description: "Why is Maggie such a sassy gal!?"}, 
@@ -38,21 +38,18 @@ const Gallery = () => {
                 />
                 <div className="gallery-grid">
                     {PetsArray.map((media) => (
-                        <a
-                        key={media.id}
-                        className="gallery-card"
-                        >
+                        <div key={media.id} className="gallery-card">
                             <div className="gallery-image-wrapper">
                                 <img
-                                src={media.image} 
+                                src={media.image}
+                                alt={media.description.replace(/\s+/g, " ")}
                                 className={`${media.id.toLowerCase()} gallery-image`}
                                 />
-                                <h2 className="gallery-name">{media.title}</h2>
                                 <p className={`${media.id.toLowerCase()} gallery-description`}>
                                     {media.description}
                                 </p>
                             </div>
-                        </a>
+                        </div>
                     ))}
                 </div>
             </div>
