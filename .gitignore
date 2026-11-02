@@ -21,6 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-**/resources/art/Background Project
+**/resources/art/background-project
 **/resources/art/Don't Upload
 .vscode/
